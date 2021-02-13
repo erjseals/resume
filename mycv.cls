@@ -27,6 +27,8 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[fixed]{fontawesome5}
 
+\usepackage{tgadventor}
+
 % Color
 \RequirePackage{color}
 \RequirePackage[table,dvipsnames]{xcolor}
@@ -52,15 +54,15 @@
   a4paper,
   top=2cm,
   bottom=2cm,
-  left=4.5cm,
-  right=1.5cm,
+  left=4.6cm,
+  right=2.3cm,
   includefoot,
   heightrounded,
 }
 
 % List setting
 \RequirePackage[inline]{enumitem}
-\setlist{noitemsep,partopsep=0pt,leftmargin=1.2em}
+\setlist{itemsep=-2pt,partopsep=0pt,leftmargin=1.65em}
 % Ref: https://tex.stackexchange.com/q/476883/16996
 \setlist[1]{before={\leavevmode\vspace*{-\baselineskip}\vspace*{-\parskip}}}
 
@@ -93,13 +95,13 @@
 % Custom styles
 \RequirePackage{titlesec}
 \titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
-\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.5cm\relax}{2.3\parskip}{0.5cm}
+\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.5cm\relax}{2.3\parskip}{1cm}
 
 % \subsection{title}
 % \subsection{title}[location]
 \RenewDocumentCommand{\subsection}{m o}{%
   \begingroup%
-  \vspace{\parskip}
+  \vspace{0.5\parskip}
   \normalsize%
   \phantomsection%
   \addcontentsline{toc}{subsection}{#1}%
@@ -109,14 +111,14 @@
 }
 
 % \printdate{date}
-\newcommand*{\printdate}[1]{\hspace*{\fill}{\itshape#1}}%
+\newcommand*{\printdate}[1]{\hspace*{\fill}{#1}}%
 
 % \begin{positions}
 %   \entry{<title>}{<date>}
 % \end{positions}
 \newenvironment{positions}{%
   \vspace{-\parskip}%
-  \vspace{.25\parskip}%
+  \vspace{0.2\parskip}%
   % \entry{<title>}{<date>}
   \newcommand*{\entry}[2]{\item \textbf{##1}\printdate{##2}}%
   \begin{itemize}[leftmargin=0pt,label={}]%
@@ -127,7 +129,7 @@
 % Header
 \renewcommand{\maketitle}{%
   \clearpage%
-  \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax}{}
+  \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax-0.5cm\relax}{}
     \begin{minipage}[c]{.3\linewidth}
       \scalebox{1.2}{\Huge\@name}%
     \end{minipage}%
