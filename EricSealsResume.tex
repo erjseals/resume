@@ -1,0 +1,246 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\usepackage{xcolor}
+
+% Helps automatic automatic resume parsers
+\input{glyphtounicode}
+\pdfgentounicode=1
+ 
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\normalsize{
+    {#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\normalsize{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\normalsize#3} & \textit{\normalsize #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}\fontfamily{phv}\selectfont{
+\vspace{25pt}
+
+%----------HEADING-----------------
+\begin{center}
+  \normalsize \textbf{{\huge ERIC SEALS}} \\  
+  \vspace{4pt}
+  \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} $\vert$ 785 554 2736 \\
+  \href{https://www.linkedin.com/in/erjseals/}{linkedin.com/in/erjseals} $\vert$ \href{https://github.com/erjseals}{github.com/erjseals}
+\end{center}
+
+\vspace{0pt}
+
+%-----------EDUCATION-----------------
+\shorterSection{\textbf{Education}}
+\vspace{4pt}
+  \resumeSubHeadingListStart
+     \vspace{1pt}
+    \resumeSubheading
+      {University of Kansas}{Lawrence, KS}
+      {\textbf{M.S. Computer Science}, College of Engineering}{Aug 2020 - May 2022}
+      \resumeItemListStart
+      \resumeItem{}
+        {Cumulative GPA: 3.63/4.00}
+        \vspace{1pt}
+      \resumeItem{}
+        {Advisor: Heechul Yun}
+    \resumeItemListEnd
+     \vspace{1pt}
+    \resumeSubheading
+      {University of Kansas}{Lawrence, KS}
+      {\textbf{B.S. Computer Science}, College of Engineering}{Aug 2017 - May 2020}
+      \resumeItemListStart
+      \resumeItem{}
+        {Cumulative GPA: 3.72/4.00}
+        \vspace{1pt}
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
+  
+  \vspace{6pt}
+
+%-----------EXPERIENCE-----------------
+\shorterSection{\textbf{Experience}}
+  \resumeSubHeadingListStart
+ 
+    \vspace{4pt}
+
+     %Qualtrics
+    \resumeSubheading
+    {GARMIN}{Olathe, KS}
+    {Software Engineer Intern}{Nov 2020 - May 2021}
+      \resumeItemListStart
+      \resumeItem{}
+        {Developed new software in C/C++ for the Garmin Tread and other Automotive GPSdevices to improve performance and lower latency.}
+        \vspace{1pt}
+      \resumeItem{}
+        {Rewrote code to fix bugs, polish the UX, and increase general usability and enjoyment ofTread in anticipation for its launch.}
+        \vspace{1pt}
+    \resumeItemListEnd
+
+    \vspace{6pt}
+   
+    %Chaoli Wang Research
+    \resumeSubheading
+    {KU School of Engineering}{Lawrence, KS}
+    {Graduate Teaching Assistant}{Aug 2020 - Present}
+      \resumeItemListStart
+      \resumeItem{}
+        {Explained technical topics related to embedded systems and real time applications.}
+        \vspace{1pt}
+      \resumeItem{}
+        {Designed a final project for the course where students utilize concepts like PWM, LIDAR,UART, and I2C with the DeepPiCar platform to build an autonomous RC car.}
+        \vspace{1pt}
+    \resumeItemListEnd
+
+    \vspace{6pt}
+
+    %AT&T
+    \resumeSubheading
+      {KU ITTC}{Lawrence, KS}
+      {Undergraduate Researcher}{Apr 2019 - May 2020}
+      \resumeItemListStart
+
+        \resumeItem{}
+          % https://about.att.com/story/2021/full_5g_experience.html#:~:text=Our%20network%20keeps%20growing&text=Our%20teams%20are%20working%20in,year%20goal%206%20months%20early.
+          {Contributed to AT\&T Labs research in detecting network anomalies for over 250 million 5G customers nationwide: }
+          \begin{itemize}
+            \item[$\circ$] Developed a Python application for centralizing virtual network function data with an Apache Pulsar message bus (like Kafka)
+            \vspace{-1pt}
+            \item[$\circ$] Processed data with Python and Apache Flink data stream computation engine (like Hadoop and Spark)
+          \end{itemize}
+          \vspace{1pt}
+        \vspace{-2pt}
+        \resumeItem{}
+          {Designed and built the project Sharp Edges - a research focused project to study theperformance gains realized with Mobile Edge Computing (servers on-the-edge vs on-device).}
+      \resumeItemListEnd
+      
+    \vspace{6pt}
+
+
+  \resumeSubHeadingListEnd
+  
+\vspace{6pt}
+
+%-----------PROJECTS-----------------
+\shorterSection{\textbf{Projects}}
+  \resumeSubHeadingListStart
+  
+      \vspace{4pt}
+
+      \resumeSubItem{\textbf{Sharp Edges: }}
+      { App and Server to study the performance gains with Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
+         \vspace{-4pt}
+         \begin{itemize}
+          \item Built a Client/Server system via an Android application in Kotlin and a server in Java -both implementing an Object Detection Model.
+          \vspace{-1pt}
+          \item Collected results by running and comparing the computationally demanding YOLOv3Object Detection Model on the Android app vs the Java server vs a powerful cloud server.
+         \end{itemize}
+      }
+
+     \vspace{4pt}
+
+     \resumeSubItem{\textbf{Quash "Quite a Shell": }}
+     { Shell for the UNIX Operating System, \href{https://github.com/erjseals/Quash}{github.com/Quash}
+        \vspace{-4pt}
+        \begin{itemize}
+            \item Created features like pipes, main and background thread execution, signal handlers, andjob status reports with C using POSIX libraries.
+        \end{itemize}
+     } 
+
+     \vspace{4pt}
+
+      \resumeSubItem{\textbf{AudioBud: }}
+      { Audio Visualizer Chrome Extension, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
+         \vspace{-4pt}
+         \begin{itemize}
+            \item Created an audio visualizer Chrome Extension with JavaScript using Canvas and WebAudio APIs. 
+            \vspace{-1pt}
+            \item Implemented digital audio filters, user interactivity via an options menu, andthe visualizer’s interface.
+         \end{itemize}
+      }
+
+  \resumeSubHeadingListEnd
+
+\vspace{6pt}
+
+%-----------SKILLS-----------------
+\shorterSection{\textbf{Skills}}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+  \normalsize
+    \item[]{\hspace{-12pt}
+     \textbf{Languages}{: C++, C, Python, Haskell, Latex}
+     \hfill
+     \textbf{Tools \& Technologies}{: Linux, Git, CUDA, OOP, Tmux, Vim, UnrealEngine}
+    }
+    \vspace{-5pt}
+
+\resumeSubHeadingListEnd
+}\end{document}
+
