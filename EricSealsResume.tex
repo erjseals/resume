@@ -29,7 +29,7 @@
 \addtolength{\oddsidemargin}{-0.50in}
 \addtolength{\evensidemargin}{-0.50in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.8in}
+\addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -139,11 +139,10 @@
         {Developed new software in C/C++ for the Garmin Tread and other Automotive GPS devices}
         \vspace{1pt}
       \resumeItem{}
-        {Wrote production code to fix bugs, to polish the UX, and to increase general performance on Tread in anticipation for its launch}
+        {Wrote production code to increase general performance, to fix bugs, and to polish the UX on Tread in anticipation for its launch}
         \vspace{1pt}
       \resumeItem{}
-        {Reworked several legacy pages related to satellite positioning which now run on thousands of updated devices}
-        \vspace{1pt}
+        {Reworked several legacy pages related to satellite positioning which now run on thousands of devices}
     \resumeItemListEnd
 
     \vspace{6pt}
@@ -157,8 +156,13 @@
         {Explained technical topics related to embedded systems and real time applications}
         \vspace{1pt}
       \resumeItem{}
-        {Designed the final project for the course having students utilize concepts on PWM, LIDAR, UART, and I2C with the DeepPiCar platform to build an autonomous RC car}
+        {Designed the final project for the course having students implement the research project DeepPiCar}
         \vspace{1pt}
+        %\begin{itemize}
+        %  \item[$\circ$] Students utilized concepts like PWM, LIDAR, UART, and I2C with the platform to build an autonomous RC car
+        %\end{itemize}
+      \resumeItem{}
+        {Students utilized concepts like PWM, LIDAR, UART, and I2C with the platform to build an autonomous RC car}
     \resumeItemListEnd
 
     \vspace{6pt}
@@ -180,12 +184,12 @@
           %\vspace{1pt}
         %\vspace{-2pt}
         \resumeItem{}
-          {Designed and built the project Sharp Edges - research to study the performance gains realized with Mobile Edge Computing (servers on-the-edge vs on-device)}
+          {Designed and built the project Sharp Edges}
+          \vspace{1pt}
+        \resumeItem{}
+          {Research to study the performance gains realized with Mobile Edge Computing (servers on-the-edge vs on-device)}
       \resumeItemListEnd
       
-    \vspace{6pt}
-
-
   \resumeSubHeadingListEnd
   
 \vspace{6pt}
@@ -200,9 +204,11 @@
       { App and Server to study the performance gains with Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
          \vspace{-4pt}
          \begin{itemize}
-          \item Built a Client/Server system via an Android application in Kotlin and a server in Java -both implementing an Object Detection Model
+          \item Built a Client/Server system via an Android application in Kotlin and a server in Java 
           \vspace{-1pt}
-          \item Collected results by running and comparing the computationally demanding YOLOv3 Object Detection Model on the Android app vs the Java server vs a powerful cloud server
+          \item Established communication between the two entities via TCP/IP Sockets 
+          \vspace{-1pt}
+          \item Compared the latencies running YOLOv3 Object Detection Model on the Android app vs the Java server vs Google Cloud
          \end{itemize}
       }
 
@@ -212,19 +218,23 @@
      { Shell for the UNIX Operating System, \href{https://github.com/erjseals/Quash}{github.com/Quash}
         \vspace{-4pt}
         \begin{itemize}
-            \item Created features like pipes, main and background thread execution, signal handlers, and job status reports with C using POSIX libraries
+            \item Created features like pipes, main and background thread execution, signal handlers, and job status reports.
+            \vspace{-1pt}
+            \item Writen in C for a Linux environment - utilizing the POSIX libraries
         \end{itemize}
      } 
 
      \vspace{4pt}
 
       \resumeSubItem{\textbf{AudioBud: }}
-      { Audio Visualizer Chrome Extension, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
+      { Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
          \vspace{-4pt}
          \begin{itemize}
-            \item Created an audio visualizer Chrome Extension with JavaScript using Canvas and WebAudio APIs
+            \item Created a time and frequency audio visualizer Chrome Extension with JavaScript using Canvas and WebAudio APIs
             \vspace{-1pt}
-            \item Implemented digital audio filters, user interactivity via an options menu, and the visualizer’s interface
+            \item Implemented digital audio filters for modifying audio output (lowpass/highpass/bandstop)
+            \vspace{-1pt}
+            \item Added customization features via an options menu allowing users to customize visuals and filters
          \end{itemize}
       }
 
