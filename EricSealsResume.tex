@@ -96,53 +96,25 @@
 
 \vspace{0pt}
 
-%-----------EDUCATION-----------------
-\shorterSection{\textbf{Education}}
-\vspace{4pt}
-  \resumeSubHeadingListStart
-     \vspace{1pt}
-    \resumeSubheading
-      {University of Kansas}{Lawrence, KS}
-      {\textbf{M.S. Computer Science}, College of Engineering}{Aug 2020 - May 2022}
-      \resumeItemListStart
-      \resumeItem{}
-        {Cumulative GPA: 3.63/4.00}
-        \vspace{1pt}
-      \resumeItem{}
-        {Advisor: Heechul Yun}
-    \resumeItemListEnd
-     \vspace{1pt}
-    \resumeSubheading
-      {University of Kansas}{Lawrence, KS}
-      {\textbf{B.S. Computer Science}, College of Engineering}{Aug 2017 - May 2020}
-      \resumeItemListStart
-      \resumeItem{}
-        {Cumulative GPA: 3.72/4.00}
-        \vspace{1pt}
-    \resumeItemListEnd
- \resumeSubHeadingListEnd
-  
-  \vspace{6pt}
-
 %-----------EXPERIENCE-----------------
 \shorterSection{\textbf{Experience}}
   \resumeSubHeadingListStart
  
     \vspace{4pt}
 
-     %Qualtrics
+    %Garmin Job
     \resumeSubheading
     {GARMIN}{Olathe, KS}
-    {Software Engineer Intern}{Nov 2020 - May 2021}
+    {Software Engineer}{Jul 2022 - Present}
       \resumeItemListStart
       \resumeItem{}
-        {Developed new software in C/C++ for the Garmin Tread and other Consumer Automotive GPS devices}
+        {Developed several new features in C++ for Garmin Dezl and other Consumer Automotive products}
         \vspace{1pt}
       \resumeItem{}
-        {Wrote production code to increase general performance, to fix bugs, and to polish the UX on Tread in anticipation for its launch}
+        {Responsible for feature development, code review, and weekly release builds}
         \vspace{1pt}
       \resumeItem{}
-        {Reworked legacy satellite positioning pages which now run on thousands of devices}
+        {Collaborated daily with Project Managers, UX Designers, and Software Engineers across Mobile/Server/Low-Level teams}
     \resumeItemListEnd
 
     \vspace{6pt}
@@ -150,7 +122,7 @@
     %Chaoli Wang Research
     \resumeSubheading
     {KU School of Engineering}{Lawrence, KS}
-    {Graduate Teaching Assistant}{Aug 2020 - Present}
+    {Graduate Teaching Assistant}{Aug 2020 - Dec 2021}
       \resumeItemListStart
       \resumeItem{}
         {Explained technical topics related to embedded systems and real time applications}
@@ -167,32 +139,52 @@
 
     \vspace{6pt}
 
-    %AT&T
+    %Garmin Internship
     \resumeSubheading
-      {KU ITTC}{Lawrence, KS}
-      {Undergraduate Researcher}{Apr 2019 - May 2020}
+    {GARMIN}{Olathe, KS}
+    {Software Engineer Intern}{Nov 2020 - May 2021}
       \resumeItemListStart
-
-        %\resumeItem{}
-          % https://about.att.com/story/2021/full_5g_experience.html#:~:text=Our%20network%20keeps%20growing&text=Our%20teams%20are%20working%20in,year%20goal%206%20months%20early.
-          %{Contributed to AT\&T Labs research in detecting network anomalies for over 250 million 5G customers nationwide: }
-          %\begin{itemize}
-          %  \item[$\circ$] Developed a Python application for centralizing virtual network function data with an Apache Pulsar message bus (like Kafka)
-          %  \vspace{-1pt}
-          %  \item[$\circ$] Processed data with Python and Apache Flink data stream computation engine (like Hadoop and Spark)
-          %\end{itemize}
-          %\vspace{1pt}
-        %\vspace{-2pt}
-        \resumeItem{}
-          {Designed and built the project Sharp Edges}
-          \vspace{1pt}
-        \resumeItem{}
-          {Research to study the performance gains realized with Mobile Edge Computing (servers on-the-edge vs on-device)}
-      \resumeItemListEnd
+      \resumeItem{}
+        {Developed software in C++ for Garmin Tread}
+        \vspace{1pt}
+      \resumeItem{}
+        {Wrote production code to increase general performance, to fix bugs, and to polish the UX on Tread in anticipation for its launch}
+        \vspace{1pt}
+      \resumeItem{}
+        {Reworked legacy satellite positioning pages which now run on thousands of devices}
+    \resumeItemListEnd
       
   \resumeSubHeadingListEnd
   
 \vspace{6pt}
+
+%-----------EDUCATION-----------------
+\shorterSection{\textbf{Education}}
+\vspace{4pt}
+  \resumeSubHeadingListStart
+     \vspace{1pt}
+    \resumeSubheading
+      {University of Kansas}{Lawrence, KS}
+      {\textbf{M.S. Computer Science}, College of Engineering}{Aug 2020 - May 2022}
+      \resumeItemListStart
+      \resumeItem{}
+        {Cumulative GPA: 3.63/4.00}
+        \vspace{1pt}
+      \resumeItem{}
+        {Thesis: Memory Bandwidth Dynamic Regulation and Throttling}
+    \resumeItemListEnd
+     \vspace{1pt}
+    \resumeSubheading
+      {University of Kansas}{Lawrence, KS}
+      {\textbf{B.S. Computer Science}, College of Engineering}{Aug 2017 - May 2020}
+      \resumeItemListStart
+      \resumeItem{}
+        {Cumulative GPA: 3.72/4.00}
+        \vspace{1pt}
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
+  
+  \vspace{6pt}
 
 %-----------PROJECTS-----------------
 \shorterSection{\textbf{Projects}}
@@ -200,41 +192,42 @@
   
       \vspace{4pt}
 
-      \resumeSubItem{\textbf{Sharp Edges: }}
-      { App and Server to study the performance gains with Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
+      \resumeSubItem{\textbf{Bandwatch: }}
+      {System-wide memory bandwidth regulation system, \href{https://github.com/erjseals/bandwatch}{github.com/erjseals/bandwatch}
          \vspace{-4pt}
          \begin{itemize}
-          \item Built a Client/Server system via an Android application in Kotlin and a server in Java 
+          \item Implemented a real-time system which reduced memory-contention induced co-running task slowdown from 14.7x to 3.6x
           \vspace{-1pt}
-          \item Established communication between the two entities via TCP/IP Sockets 
+          \item Designed the dynamic regulation algorithm to make use of real-time memory utilization statistics
           \vspace{-1pt}
-          \item Compared the latencies running YOLOv3 Object Detection Model on the Android app vs the Java server vs Google Cloud
+          \item Built as a Linux Kernel module in C targetting the NVIDIA Jetson Nano platform
          \end{itemize}
       }
 
      \vspace{4pt}
 
-     \resumeSubItem{\textbf{Quash "Quite a Shell": }}
-     { Shell for the UNIX Operating System, \href{https://github.com/erjseals/Quash}{github.com/Quash}
-        \vspace{-4pt}
-        \begin{itemize}
-            \item Created features like pipes, main and background thread execution, signal handlers, and job status reports.
-            \vspace{-1pt}
-            \item Writen in C for a Linux environment - utilizing the POSIX libraries
-        \end{itemize}
-     } 
+
+      \resumeSubItem{\textbf{Sharp Edges: }}
+      {Client/Server to study the performance gains with 5G Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
+         \vspace{-4pt}
+         \begin{itemize}
+          \item Established communication between the two entities via TCP/IP Sockets 
+          \vspace{-1pt}
+          \item Compared YOLOv3 Object Detection latencies between computations on an Android app, a local server, and Google Cloud
+         \end{itemize}
+      }
 
      \vspace{4pt}
 
       \resumeSubItem{\textbf{AudioBud: }}
-      { Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
+      {Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
          \vspace{-4pt}
          \begin{itemize}
-            \item Created a time and frequency audio visualizer Chrome Extension with JavaScript using Canvas and WebAudio APIs
+            \item Created a time and frequency domain audio visualizer Chrome Extension 
             \vspace{-1pt}
-            \item Implemented digital audio filters for modifying audio output (lowpass/highpass/bandstop)
+            \item Implemented several digital audio filters for modifying audio output (lowpass/highpass/bandstop)
             \vspace{-1pt}
-            \item Added customization features via an options menu allowing users to customize visuals and filters
+            \item Added customization features via an options menu allowing users to customize graphical visuals and filter paramaters
          \end{itemize}
       }
 
@@ -248,9 +241,9 @@
   \resumeSubHeadingListStart
   \normalsize
     \item[]{\hspace{-12pt}
-     \textbf{Languages}{: C++, C, Python, Haskell, Latex, Bash}
+     \textbf{Languages}{: C++, C, Python, Latex, Shell}
      \hfill
-     \textbf{Tools \& Technologies}{: Linux, Git, CUDA, openCL, Tmux, Vim, UE4}
+     \textbf{Tools \& Technologies}{: Linux, Git, Real-time Embedded Systems}
     }
     \vspace{-5pt}
 
