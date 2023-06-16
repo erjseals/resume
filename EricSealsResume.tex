@@ -87,12 +87,22 @@
 \vspace{25pt}
 
 %----------HEADING-----------------
+% \begin{center}
+%   \normalsize \textbf{{\huge ERIC SEALS}} \\  
+%   \vspace{4pt}
+%   \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} $\vert$ 785 554 2736 \\
+%   \href{https://www.linkedin.com/in/erjseals/}{linkedin.com/in/erjseals} $\vert$ \href{https://github.com/erjseals}{github.com/erjseals}
+% \end{center}
 \begin{center}
-  \normalsize \textbf{{\huge ERIC SEALS}} \\  
+  \normalsize \textbf{{\huge ERIC SEALS}} \\
   \vspace{4pt}
-  \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} $\vert$ 785 554 2736 \\
-  \href{https://www.linkedin.com/in/erjseals/}{linkedin.com/in/erjseals} $\vert$ \href{https://github.com/erjseals}{github.com/erjseals}
+  \begin{tabular}{@{}r@{\hspace{4pt}}c@{\hspace{4pt}}l@{}}
+    \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} & $\vert$ & 785-554-2736 \\
+    \href{https://www.linkedin.com/in/erjseals/}{linkedin.com/in/erjseals} & $\vert$ & \href{https://github.com/erjseals}{github.com/erjseals}
+  \end{tabular}
 \end{center}
+
+
 
 \vspace{0pt}
 
@@ -102,22 +112,50 @@
  
     \vspace{4pt}
 
+    % %Garmin Job
+    % \resumeSubheading
+    % {GARMIN}{Olathe, KS}
+    % {Software Engineer}{Jul 2022 - Present}
+    %   \resumeItemListStart
+    %   \resumeItem{}
+    %     {Develop and implement new features in C++ for Garmin Dezl and other consumer GPS navigation products}
+    %   \resumeItem{}
+    %     {Built a new weather map overlay feature, providing truck drivers with a real-time wind data display}
+    %   \resumeItem{}
+    %     {Collaborated with an internal data sourcing team to implement functionality for fetching live wind data and parsed the information for accurate visualization}
+    %   \resumeItem{}
+    %     {Design and test performant application code for deployment on a Yocto embedded platform}
+    %   \resumeItem{}
+    %     {Take ownership of feature development, conducting code reviews, and ensuring weekly release builds}
+    %   \resumeItem{}
+    %     {Collaborate seamlessly with Project Managers, UX Designers, and cross-functional Software Engineers}
+    %   \resumeItem{}
+    %     {Contribute actively to bi-weekly sprints and play a key role in optimizing Jenkins CI build jobs}
+    % \resumeItemListEnd
+
     %Garmin Job
-    \resumeSubheading
-    {GARMIN}{Olathe, KS}
-    {Software Engineer}{Jul 2022 - Present}
-      \resumeItemListStart
-      \resumeItem{}
-        {Develop and implement new features in C++ for Garmin Dezl and other consumer GPS navigation products}
-      \resumeItem{}
-        {Design and test performant application code for deployment on Yocto embedded platforms}
-      \resumeItem{}
-        {Take ownership of feature development, conducting code reviews, and ensuring weekly release builds}
-      \resumeItem{}
-        {Collaborate seamlessly with Project Managers, UX Designers, and cross-functional Software Engineers}
-      \resumeItem{}
-        {Contribute actively to bi-weekly sprints and play a key role in optimizing Jenkins CI build jobs}
-    \resumeItemListEnd
+%Garmin Job
+\resumeSubheading
+{GARMIN}{Olathe, KS}
+{Software Engineer}{Jul 2022 - Present}
+\resumeItemListStart
+\resumeItem{}
+{Develop and implement new features in C++ for Garmin Dezl and other consumer GPS navigation products
+\begin{itemize}
+  \item Built a new weather map overlay feature, providing truck drivers with a real-time wind data display
+  \item Collaborated with an internal data sourcing team to implement functionality for fetching live wind data and parsed the information for accurate visualization
+\end{itemize}}
+\resumeItem{}
+{Design and test performant application code for deployment on a Yocto embedded platform}
+\resumeItem{}
+{Take ownership of feature development, conducting code reviews, and ensuring weekly release builds}
+\resumeItem{}
+{Actively contributed to bi-weekly sprints and executed Jenkins CI build jobs for seamless project progress and efficient delivery}
+\resumeItem{}
+{Collaborate seamlessly with Project Managers, UX Designers, and cross-functional Software Engineers}
+\resumeItemListEnd
+
+
 
     \vspace{6pt}
    
@@ -194,9 +232,9 @@
       {System-wide memory bandwidth regulation system, \href{https://github.com/erjseals/bandwatch}{github.com/erjseals/bandwatch}
          \vspace{-4pt}
          \begin{itemize}
-          \item Implemented a real-time system which reduced memory-contention induced task slowdown from 14.7x to 3.6x
+          \item Developed a real-time system that significantly reduced memory contention-induced task slowdown from 14.7x to 3.6x
           \vspace{-1pt}
-          \item Designed a dynamic regulation algorithm making use of real-time memory utilization statistics
+          \item Designed and implemented a dynamic regulation algorithm that leveraged real-time memory utilization statistics
           \vspace{-1pt}
           \item Built as a Linux Kernel module in C targetting the NVIDIA Jetson Nano platform
          \end{itemize}
@@ -208,11 +246,11 @@
       {Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
          \vspace{-4pt}
          \begin{itemize}
-            \item Created a time and frequency domain audio-visualization Chrome Extension 
+            \item Developed a Chrome Extension for real-time time and frequency domain audio visualization
             \vspace{-1pt}
-            \item Implemented several digital audio filters for modifying audio output (lowpass / highpass / bandstop)
+            \item Implemented multiple digital audio filters (lowpass, highpass, bandstop) to modify audio output
             \vspace{-1pt}
-            \item Added customization features menu allowing users to modify graphical visuals and filter parameters
+            \item Incorporated a customization feature menu that enables users to modify graphical visuals and adjust filter parameters
          \end{itemize}
       }
 
@@ -224,7 +262,7 @@
          \begin{itemize}
           \item Established communication between the two entities via TCP/IP Sockets 
           \vspace{-1pt}
-          \item Compared YOLOv3 Object Detection latencies between computations on an Android app, a local server, and Google Cloud
+          \item Evaluated YOLOv3 Object Detection latencies by comparing computations on an Android app, a local server, and Google Cloud
          \end{itemize}
       }
 
@@ -248,9 +286,9 @@
   \resumeSubHeadingListStart
   \normalsize
     \item[]{\hspace{-12pt}
-     \textbf{Languages}{: C++, C, Python, Bash, Latex}
+     \textbf{Languages}{: C++, C, Python, Bash, Java}
      \hfill
-     \textbf{Tools \& Technologies}{: Git, RTOS, Embedded, Juce, Boost, MS VS/VC, Vim}
+     \textbf{Tools \& Technologies}{: Git, RTOS, Embedded, Boost Libraries, Juce, Vim}
     }
     \vspace{-5pt}
 
