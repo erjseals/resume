@@ -9,7 +9,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{helvet}
+\usepackage{helvet} 
 \usepackage{xcolor}
 
 \usepackage{enumitem}
@@ -35,6 +35,9 @@
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
+% Set footskip to avoid warning
+\setlength{\footskip}{4pt}
+
 \urlstyle{same}
 
 \raggedbottom
@@ -43,7 +46,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-6pt}\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 
@@ -92,7 +95,7 @@
   \normalsize \textbf{{\huge ERIC SEALS}} \\
   \vspace{4pt}
   \begin{tabular}{@{}r@{\hspace{4pt}}c@{\hspace{4pt}}l@{}}
-    \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} & $\vert$ & 785-554-2736 \\
+    \href{mailto:erjseals@gmail.com}{erjseals@gmail.com} & $\vert$ & 32-492-298753 \\
     \href{https://www.linkedin.com/in/erjseals/}{linkedin.com/in/erjseals} & $\vert$ & \href{https://erjseals.github.io/}{erjseals.github.io}
   \end{tabular}
 \end{center}
@@ -105,10 +108,29 @@
  
   \vspace{4pt}
 
+  % Guardsquare Job
+  \resumeSubheading
+  {Guardsquare}{}
+  {Compiler Software Engineer}{May 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{}
+      {Developed and enhanced machine-code–level obfuscation techniques for iOS applications, contributing to iXGuard, a comprehensive mobile app protection solution}
+    \resumeItem{}
+      {Implemented new LLVM-based code transformations and optimizations to improve resilience against reverse engineering while maintaining performance and correctness}
+    \resumeItem{}
+      {Researched, prototyped, and productionized advanced obfuscation and compilation techniques, leveraging knowledge of LLVM internals and compilation pipelines}
+    \resumeItem{}
+      {Debugged complex issues across the LLVM toolchain and generated machine code, providing fixes and technical support for client-reported problems}
+    \resumeItem{}
+      {Worked extensively with x86\_64 and ARMv8-A architectures, ensuring correctness and robustness of low-level transformations across platforms}
+    \resumeItem{}
+      {Wrote maintainable, high-performance C++ code, balancing algorithmic efficiency with clarity for long-term maintainability}
+  \resumeItemListEnd
+
   %Garmin Job
   \resumeSubheading
   {GARMIN}{Olathe, KS}
-  {Software Engineer}{Jul 2022 - Oct 2023}
+  {Software Engineer}{Jul 2022 -- Oct 2023}
   \resumeItemListStart
   \resumeItem{}
   {Developed advanced features in C++ for Garmin Dezl, including a high-performance weather map overlay utilizing OpenGL, enhancing real-time data visualization and user interaction}
@@ -127,7 +149,7 @@
   %KU Grad Teaching
   \resumeSubheading
   {KU School of Engineering}{Lawrence, KS}
-  {Graduate Teaching Assistant}{Aug 2020 - Dec 2021}
+  {Graduate Teaching Assistant}{Aug 2020 -- Dec 2021}
     \resumeItemListStart
     \resumeItem{}
       {Explained technical topics related to embedded systems and real time applications}
@@ -138,8 +160,8 @@
   %Garmin Internship
   \resumeSubheading
   {GARMIN}{Olathe, KS}
-  {Software Engineer Intern}{Nov 2020 - May 2021}
-    \resumeItemListStart
+  {Software Engineer Intern}{Nov 2020 -- May 2021}
+  \resumeItemListStart
     \resumeItem{}
       {Developed software in C++ for Garmin Tread, an Outdoor Adventure Product}
     \resumeItem{}
@@ -159,18 +181,18 @@
      \vspace{1pt}
     \resumeSubheading
       {University of Kansas}{Lawrence, KS}
-      {\textbf{M.S. Computer Engineering}, College of Engineering}{Aug 2020 - May 2022}
+      {\textbf{M.S. Computer Engineering}, College of Engineering}{Aug 2020 -- May 2022}
       \resumeItemListStart
       \resumeItem{}
         {Cumulative GPA: 3.76/4.00}
         \vspace{1pt}
       \resumeItem{}
-        {Thesis: Memory Bandwidth Dynamic Regulation and Throttling}
+        {Thesis: Memory Bandwidth Dynamic Regulation and Throttling (Linux kernel module, Jetson Nano)}
     \resumeItemListEnd
      \vspace{1pt}
     \resumeSubheading
       {University of Kansas}{Lawrence, KS}
-      {\textbf{B.S. Computer Engineering}, College of Engineering}{Aug 2017 - May 2020}
+      {\textbf{B.S. Computer Engineering}, College of Engineering}{Aug 2017 -- May 2020}
       \resumeItemListStart
       \resumeItem{}
         {Cumulative GPA: 3.72/4.00}
@@ -181,62 +203,62 @@
   \vspace{6pt}
 
 %-----------PROJECTS-----------------
-\shorterSection{\textbf{Projects}}
-  \resumeSubHeadingListStart
-  
-      \vspace{4pt}
-
-      \resumeSubItem{\textbf{Bandwatch (M.S. Thesis): }}
-      {System-wide memory bandwidth regulation system, \href{https://github.com/erjseals/bandwatch}{github.com/erjseals/bandwatch}
-         \vspace{-4pt}
-         \begin{itemize}
-          \item Developed a real-time algorithm to dynamically regulate memory bandwidth between CPU and GPU tasks
-          \vspace{-1pt}
-          \item Implemented the solution as a Linux Kernel module in C on NVIDIA's Jetson Nano platform
-          \vspace{-1pt}
-          \item Utilized SD-VBS (San Diego Vision Benchmark Suite) and CUDA for rigorous testing and validation
-          \vspace{-1pt}
-          \item Achieved significant performance improvements, reducing task slowdowns by up to 14.7x to 3.6x
-         \end{itemize}
-      }
-
-     \vspace{4pt}
-
-      \resumeSubItem{\textbf{AudioBud: }}
-      {Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
-         \vspace{-4pt}
-         \begin{itemize}
-            \item Developed a Chrome Extension for real-time time and frequency domain audio visualization
-            \vspace{-1pt}
-            \item Incorporated multiple digital audio filters (lowpass, highpass, bandstop) to modify audio output
-         \end{itemize}
-      }
-
-      \vspace{4pt}
-
-      \resumeSubItem{\textbf{Sharp Edges: }}
-      {Client/Server to study the performance gains with 5G Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
-         \vspace{-4pt}
-         \begin{itemize}
-          \item Established communication between the two entities via TCP/IP Sockets 
-          \vspace{-1pt}
-          \item Evaluated YOLOv3 Object Detection latencies by comparing computations on an Android app, a local server, and Google Cloud
-         \end{itemize}
-      }
-
-      % \resumeSubItem{\textbf{Heavily Inspired Stolen Ideas: }}
-      % {Album, \href{https://open.spotify.com/album/4dC7kXI15LPlgrpOZwkbli?si=aotf7a3iTmCEDSZmtSN6JA}{open.spotify.com/album/Heavily-Inspired-Stolen-Ideas}
-      %    \vspace{-4pt}
-      %    \begin{itemize}
-      %       \item Self-produced electronic / instrumental album using Ableton Live.
-      %       \vspace{-1pt}
-      %       \item Listing here to demonstrate passion and a solid understanding of user needs for audio software and equipment!
-      %    \end{itemize}
-      % }
-
-  \resumeSubHeadingListEnd
-
-\vspace{6pt}
+% \shorterSection{\textbf{Projects}}
+%   \resumeSubHeadingListStart
+%   
+%       \vspace{4pt}
+% 
+%       \resumeSubItem{\textbf{Bandwatch (M.S. Thesis): }}
+%       {System-wide memory bandwidth regulation system, \href{https://github.com/erjseals/bandwatch}{github.com/erjseals/bandwatch}
+%          \vspace{-4pt}
+%          \begin{itemize}
+%           \item Developed a real-time algorithm to dynamically regulate memory bandwidth between CPU and GPU tasks
+%           \vspace{-1pt}
+%           \item Implemented the solution as a Linux Kernel module in C on NVIDIA's Jetson Nano platform
+%           \vspace{-1pt}
+%           \item Utilized SD-VBS (San Diego Vision Benchmark Suite) and CUDA for rigorous testing and validation
+%           \vspace{-1pt}
+%           \item Achieved significant performance improvements, reducing task slowdowns by up to 14.7x to 3.6x
+%          \end{itemize}
+%       }
+% 
+%      \vspace{4pt}
+% 
+%       \resumeSubItem{\textbf{AudioBud: }}
+%       {Audio Visualizer for Chrome, \href{https://github.com/eric-delacruz-prod/AudioBud-Chrome-Extension}{github.com/AudioBud-Chrome-Extension}
+%          \vspace{-4pt}
+%          \begin{itemize}
+%             \item Developed a Chrome Extension for real-time time and frequency domain audio visualization
+%             \vspace{-1pt}
+%             \item Incorporated multiple digital audio filters (lowpass, highpass, bandstop) to modify audio output
+%          \end{itemize}
+%       }
+% 
+%       \vspace{4pt}
+% 
+%       \resumeSubItem{\textbf{Sharp Edges: }}
+%       {Client/Server to study the performance gains with 5G Edge Computing, \href{https://github.com/erjseals/sharp-edges-android}{github.com/sharp-edges-android}
+%          \vspace{-4pt}
+%          \begin{itemize}
+%           \item Established communication between the two entities via TCP/IP Sockets 
+%           \vspace{-1pt}
+%           \item Evaluated YOLOv3 Object Detection latencies by comparing computations on an Android app, a local server, and Google Cloud
+%          \end{itemize}
+%       }
+% 
+%       % \resumeSubItem{\textbf{Heavily Inspired Stolen Ideas: }}
+%       % {Album, \href{https://open.spotify.com/album/4dC7kXI15LPlgrpOZwkbli?si=aotf7a3iTmCEDSZmtSN6JA}{open.spotify.com/album/Heavily-Inspired-Stolen-Ideas}
+%       %    \vspace{-4pt}
+%       %    \begin{itemize}
+%       %       \item Self-produced electronic / instrumental album using Ableton Live.
+%       %       \vspace{-1pt}
+%       %       \item Listing here to demonstrate passion and a solid understanding of user needs for audio software and equipment!
+%       %    \end{itemize}
+%       % }
+% 
+%   \resumeSubHeadingListEnd
+% 
+% \vspace{6pt}
 
 %-----------SKILLS-----------------
 \shorterSection{\textbf{Skills}}
