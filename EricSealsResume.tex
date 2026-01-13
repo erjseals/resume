@@ -84,6 +84,9 @@
 % custom commands
 \newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
 
+\newcommand{\noindentitem}{%
+  \item[]\setlength{\leftskip}{-1em}%
+}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -103,14 +106,14 @@
 \vspace{0pt}
 
 %-----------EXPERIENCE-----------------
-\shorterSection{\textbf{Experience}}
+\shorterSection{\textbf{Professional Experience}}
   \resumeSubHeadingListStart
  
   \vspace{4pt}
 
   % Guardsquare Job
   \resumeSubheading
-  {Guardsquare}{}
+  {Guardsquare}{Leuven, Belgium}
   {Compiler Software Engineer}{May 2024 -- Present}
   \resumeItemListStart
     \resumeItem{}
@@ -118,40 +121,41 @@
     \resumeItem{}
       {Implemented new LLVM-based code transformations and optimizations to improve resilience against reverse engineering while maintaining performance and correctness}
     \resumeItem{}
-      {Researched, prototyped, and productionized advanced obfuscation and compilation techniques, leveraging knowledge of LLVM internals and compilation pipelines}
+      {Researched, prototyped, and productionized advanced obfuscation and compilation techniques using LLVM internals and compiler pipelines}
     \resumeItem{}
       {Debugged complex issues across the LLVM toolchain and generated machine code, providing fixes and technical support for client-reported problems}
     \resumeItem{}
-      {Worked extensively with x86\_64 and ARMv8-A architectures, ensuring correctness and robustness of low-level transformations across platforms}
+      {Worked extensively with x86\_64 and ARMv8 architectures, ensuring correctness and robustness of low-level transformations across platforms}
     \resumeItem{}
       {Wrote maintainable, high-performance C++ code, balancing algorithmic efficiency with clarity for long-term maintainability}
   \resumeItemListEnd
 
   %Garmin Job
   \resumeSubheading
-  {GARMIN}{Olathe, KS}
+  {GARMIN}{Olathe, USA}
   {Software Engineer}{Jul 2022 -- Oct 2023}
   \resumeItemListStart
-  \resumeItem{}
-  {Developed advanced features in C++ for Garmin Dezl, including a high-performance weather map overlay utilizing OpenGL, enhancing real-time data visualization and user interaction}
-  \resumeItem{}
-  {Coordinated with a cross-functional team to enhance the weather map overlay, implementing a dynamic data querying approach that adjusted for zoom/grid size, significantly reducing data size requirements and improving application performance}
-  \resumeItem{}
-  {Engineered performant application code for Yocto-based embedded platforms, optimizing system-level performance and demonstrating a deep understanding of hardware-software integration}
-  \resumeItem{}
-  {Owned feature development, conducted code reviews, and managed weekly release builds to ensure high-quality deliverables}
-  \resumeItem{}
-  {Collaborated seamlessly with Project Managers, UX Designers, Hardware Engineers, and cross-functional Software Engineers}
+    \resumeItem{}
+      {Developed advanced features in C++ for Garmin Dezl, including a high-performance weather map overlay utilizing OpenGL, enhancing real-time data visualization and user interaction}
+    \resumeItem{}
+      {Coordinated with a cross-functional team to enhance the weather map overlay, implementing a dynamic data querying approach that adjusted for zoom/grid size, significantly reducing data size requirements and improving application performance}
+    \resumeItem{}
+      {Engineered performant application code for Yocto-based embedded platforms, optimizing system-level performance and demonstrating a deep understanding of hardware-software integration}
+    \resumeItem{}
+      {Owned feature development, conducted code reviews, and managed weekly release builds to ensure high-quality deliverables}
+    \resumeItem{}
+      {Collaborated seamlessly with Project Managers, UX Designers, Hardware Engineers, and cross-functional Software Engineers}
   \resumeItemListEnd
 
   \vspace{6pt}
 
   %KU Grad Teaching
   \resumeSubheading
-  {KU School of Engineering}{Lawrence, KS}
+  {KU School of Engineering}{Lawrence, USA}
   {Graduate Teaching Assistant}{Aug 2020 -- Dec 2021}
-    \resumeItemListStart
-    \resumeItem{}
+  \resumeItemListStart
+    \resumeItemNoBullet
+      {Teaching}
       {Explained technical topics related to embedded systems and real time applications}
   \resumeItemListEnd
 
@@ -159,7 +163,7 @@
 
   %Garmin Internship
   \resumeSubheading
-  {GARMIN}{Olathe, KS}
+  {GARMIN}{Olathe, USA}
   {Software Engineer Intern}{Nov 2020 -- May 2021}
   \resumeItemListStart
     \resumeItem{}
@@ -265,13 +269,11 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
   \normalsize
-    \item[]{\hspace{-12pt}
-     \textbf{Languages}{: C++, Python, C, JavaScript}
-     \hfill
-     \textbf{Tools \& Technologies}{: Embedded, Linux, C++ Boost, CUDA, OpenGL, Git}
-    }
-    \vspace{-5pt}
+  \noindentitem
+  \textbf{Languages:} C++, Python, C, JavaScript \\
+  \textbf{Tools \& Technologies:} LLVM, Embedded Linux, CMake, Boost, CUDA, OpenGL, Git
 
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
 }\end{document}
 
